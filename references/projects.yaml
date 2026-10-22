@@ -1,0 +1,134 @@
+# 仅包含课程明确点名的核心开源项目。
+# ref 固定为 2026-10-22 查询官方 GitHub 默认分支所得 commit；真正研读时按阶段策略决定是否升级。
+verified_at: 2026-10-22
+projects:
+  - name: PyTorch
+    url: https://github.com/pytorch/pytorch.git
+    default_branch: main
+    ref: e149fba40596a8181f44e1f318da5fa10d609118
+    focus: Autograd, Dispatcher, Compiler
+  - name: LLVM-MLIR
+    url: https://github.com/llvm/llvm-project.git
+    default_branch: main
+    ref: 0b5e65f208f29e5b676a605b1e485d03722100d9
+    focus: IR, Pass, Lowering, CodeGen
+  - name: Triton
+    url: https://github.com/triton-lang/triton.git
+    default_branch: main
+    ref: c1641abbb17a80b8c9cad1fa05b4c70d6ac260ab
+    focus: Tile, Layout, GPU Kernel
+  - name: IREE
+    url: https://github.com/iree-org/iree.git
+    default_branch: main
+    ref: f1eb9ce728e5cf9553307865532807673142e775
+    focus: 多级编译与硬件适配
+  - name: Apache-TVM
+    url: https://github.com/apache/tvm.git
+    default_branch: main
+    ref: 18ec45ed7729b70ae94c340014624b34b6ecf5a7
+    focus: 多级编译与硬件适配
+  - name: CUTLASS
+    url: https://github.com/NVIDIA/cutlass.git
+    default_branch: main
+    ref: 91843b71d90737e0a9b86f7d9df213cff5a3526f
+    focus: 高性能矩阵运算
+  - name: FlashInfer
+    url: https://github.com/flashinfer-ai/flashinfer.git
+    default_branch: main
+    ref: 6a2f2661d24db6400466db51f482cd3c95faffaa
+    focus: Attention Kernel
+  - name: vLLM
+    url: https://github.com/vllm-project/vllm.git
+    default_branch: main
+    ref: 9c66703eef1726bdd582370cbeed52ebdb7c2c80
+    focus: Scheduler, KV Cache, Execution
+  - name: SGLang
+    url: https://github.com/sgl-project/sglang.git
+    default_branch: main
+    ref: 24e45961c616ba36a5dd4a6083cf4069d36120a4
+    focus: Scheduler, KV Cache, Execution
+  - name: llm-d
+    url: https://github.com/llm-d/llm-d.git
+    default_branch: main
+    ref: a98ceff122f873a06990b91e3429993710bde631
+    focus: 分布式路由、缓存与编排
+  - name: NVIDIA-Dynamo
+    url: https://github.com/ai-dynamo/dynamo.git
+    default_branch: main
+    ref: 5df849a06aefb7ea98b6dd23b0b51906efd84902
+    focus: 分布式路由、缓存与编排
+  - name: TorchTitan
+    url: https://github.com/pytorch/torchtitan.git
+    default_branch: main
+    ref: ed3c713afeb21a514714ff59fec4fd4bb2d3b09d
+    focus: FSDP2 与多维并行
+  - name: Megatron-LM
+    url: https://github.com/NVIDIA/Megatron-LM.git
+    default_branch: main
+    ref: aa46a57229995b4c537ed2f554e78d10473e4964
+    focus: 模型并行与训练系统
+  - name: Kueue
+    url: https://github.com/kubernetes-sigs/kueue.git
+    default_branch: main
+    ref: 01a9a86d0dc01b19c7111b3674c42a9d40c2234e
+    focus: 作业调度与资源管理
+  - name: Ray
+    url: https://github.com/ray-project/ray.git
+    default_branch: master
+    ref: e91b1de0e096df2a27567594b31827fe12b593b2
+    focus: 作业调度与资源管理
+  - name: NIXL
+    url: https://github.com/ai-dynamo/nixl.git
+    default_branch: main
+    ref: 0b146a82d8efb52f40b1da872bb271978f510e94
+    focus: 推理系统中的高速数据传输
+  - name: Matt-Pocock-Skills
+    url: https://github.com/mattpocock/skills.git
+    default_branch: main
+    ref: 5beb35b040e3de97e54fa9e386d7e42d15c295c2
+    focus: Agent workflow 与教学工作流
+  - name: CUDA-Samples
+    url: https://github.com/NVIDIA/cuda-samples.git
+    default_branch: master
+    ref: 5443602d89ed99aede2e4b7bf329daddeadb320e
+    focus: CUDA 官方示例与并行原语
+  - name: Apache-Arrow
+    url: https://github.com/apache/arrow.git
+    default_branch: main
+    ref: 373d64c02cb23663b63c5853099fca43a46c39fc
+    focus: 列式内存格式与数据管道
+  - name: NVIDIA-GPU-Operator
+    url: https://github.com/NVIDIA/gpu-operator.git
+    default_branch: main
+    ref: aea3d723d91f9ffb0dcd1dba1f49fec2cb84dd93
+    focus: Kubernetes GPU 软件栈运维
+  - name: Hugging-Face-Transformers
+    url: https://github.com/huggingface/transformers.git
+    default_branch: main
+    ref: ab7e5ac33f234b41665fee663fefd441d35ad3d4
+    focus: Tokenizer、模型架构与生成实现
+  - name: MLCommons-Training-Policies
+    url: https://github.com/mlcommons/training_policies.git
+    default_branch: master
+    ref: 14bc89fe00691a5181f401bd67dc242dc928b205
+    focus: 可复现训练基准规则与提交治理
+  - name: FlashAttention
+    url: https://github.com/Dao-AILab/flash-attention.git
+    default_branch: main
+    ref: 767386d814051d1d853c45ac952d8259b5bc7235
+    focus: IO-aware Attention Kernel 与工程实现
+  - name: Safetensors
+    url: https://github.com/huggingface/safetensors.git
+    default_branch: main
+    ref: e246a2560645b7525f5775669ed816eb57c5bcc8
+    focus: 模型权重安全格式与零拷贝读取
+  - name: Megatron-Energon
+    url: https://github.com/NVIDIA/Megatron-Energon.git
+    default_branch: develop
+    ref: fb2aaf8ca9f9817b654dcfb36ca9d97547e77af9
+    focus: 多模态训练数据加载与打包
+  - name: NCCL
+    url: https://github.com/NVIDIA/nccl.git
+    default_branch: master
+    ref: 3e46c089f4ae4732722a419eb6096aead7e47a30
+    focus: GPU Collective 通信实现
